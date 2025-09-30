@@ -701,111 +701,6 @@ expense-tracker/
 ├── eslint.config.js             # ESLint configuration
 ├── expo-env.d.ts                # Expo type definitions
 └── types.ts                     # Custom type definitions
-```
-
-## 🔧 Configuration
-
-### Firebase Rules
-Set up Firestore security rules:
-
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    // Users can only access their own data
-    match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-    
-    // Users can only access their own wallets
-    match /wallets/{walletId} {
-      allow read, write: if request.auth != null && 
-        request.auth.uid == resource.data.uid;
-    }
-    
-    // Users can only access their own transactions
-    match /transactions/{transactionId} {
-      allow read, write: if request.auth != null && 
-        request.auth.uid == resource.data.uid;
-    }
-  }
-}
-```
-
-### Storage Rules
-```javascript
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    match /images/{userId}/{allPaths=**} {
-      allow read, write: if request.auth != null && 
-        request.auth.uid == userId;
-    }
-  }
-}
-```
-
-## 📊 Performance Optimization
-
-### Best Practices Implemented
-1. **Lazy Loading** - Components loaded on demand
-2. **Image Optimization** - Using Expo Image with caching
-3. **List Virtualization** - FlashList for large datasets
-4. **State Management** - Efficient Context usage
-5. **Bundle Splitting** - Route-based code splitting
-6. **Memory Management** - Proper cleanup in useEffect
-
-### Performance Metrics
-- **App Bundle Size**: ~15MB (optimized)
-- **Cold Start Time**: <3 seconds
-- **Navigation Speed**: <200ms between screens
-- **Memory Usage**: <100MB average
-- **Network Efficiency**: Optimized Firestore queries
-
-## 🧪 Testing
-
-### Testing Strategy
-```bash
-# Install testing dependencies
-npm install --save-dev @testing-library/react-native jest
-
-# Run tests
-npm test
-
-# Test coverage
-npm run test:coverage
-```
-
-### Test Structure
-- **Unit Tests** - Components and utilities
-- **Integration Tests** - Service functions
-- **E2E Tests** - Critical user flows
-- **Performance Tests** - Load and stress testing
-
-## 🚀 Deployment
-
-### Expo Application Services (EAS)
-```bash
-# Install EAS CLI
-npm install -g @expo/eas-cli
-
-# Login to Expo
-eas login
-
-# Configure project
-eas build:configure
-
-# Build for production
-eas build --platform all
-
-# Submit to stores
-eas submit --platform all
-```
-
-### Environment-Specific Builds
-- **Development**: `expo start`
-- **Preview**: `eas build --profile preview`
-- **Production**: `eas build --profile production`
 
 ## 🤝 Contributing
 
@@ -846,14 +741,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/discussions)
 - 📖 **Documentation**: [Wiki](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/wiki)
 
-## 🙏 Acknowledgments
 
-- **Expo Team** - For the amazing development platform
-- **Firebase Team** - For robust backend services
-- **React Native Community** - For continuous innovation
-- **Open Source Contributors** - For the libraries and tools used
-
----
 
 <div align="center">
   <p>
