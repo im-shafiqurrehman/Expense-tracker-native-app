@@ -1,16 +1,3 @@
-# 💰 Expense Tracker - React Native App
-
-<div align="center">
-  <img src="./assets/images/icon.png" alt="Expense Tracker Logo" width="120" height="120">
-  
-  [![React Native](https://img.shields.io/badge/React%20Native-0.79.6-blue.svg)](https://reactnative.dev/)
-  [![Expo](https://img.shields.io/badge/Expo-53.0.22-black.svg)](https://expo.dev/)
-  [![Firebase](https://img.shields.io/badge/Firebase-12.1.0-orange.svg)](https://firebase.google.com/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://www.typescriptlang.org/)
-  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-</div>
-
-## 📱 Overview
 
 **Expense Tracker** is a comprehensive React Native mobile application designed to help users manage their personal finances efficiently. Built with modern technologies including React Native, Expo, TypeScript, and Firebase, this app provides a seamless experience for tracking income, expenses, and managing multiple wallets with real-time data synchronization.
 
@@ -740,8 +727,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/issues)
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/discussions)
 - 📖 **Documentation**: [Wiki](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/wiki)
-
-
 
 <div align="center">
   <p>
