@@ -454,24 +454,3 @@ expense-tracker/
 ├── contexts/              # React contexts (auth)
 ├── utils/                 # Utility functions
 └── Configuration files    # app.json, package.json, tsconfig.json
-
-## 🤝 Contributing
-Fork → Create feature branch → Follow ESLint/TypeScript standards → Commit → Push → Open PR
-
-## 📄 License
-MIT License - see [LICENSE](LICENSE) file
-
-## 👥 Contact
-**Developer:** [Shafiq ur Rehman](https://github.com/im-shafiqurrehman)  
-**Email:** shafiqurrehman.dev@gmail.com  
-**LinkedIn:** [im-shafiqurrehman](https://linkedin.com/in/im-shafiqurrehman)  
-**Issues:** [GitHub Issues](https://github.com/im-shafiqurrehman/Expense-tracker-native-app/issues)
-
-<div align="center">
-  <p>
-    <strong>Made with ❤️ by Shafiq ur Rehman</strong>
-  </p>
-  <p>
-    <sub>💰 Take control of your finances with smart expense tracking</sub>
-  </p>
-</div>
